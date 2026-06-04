@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Fedi Jaelani — Jaringan Komputer, Linux & TI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;700;900&family=Noto+Serif+JP:wght@300;400;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ░░ SIDEBAR NAV ░░ -->
+  <nav id="sidebar" class="sidebar">
+    <div class="sidebar-logo">
+      <span class="logo-kanji">藤</span>
+      <span class="logo-text">FJ</span>
+    </div>
+
+    <div class="sidebar-links">
+      <a href="#home" class="nav-link active" data-page="home">
+        <span class="nav-icon">⌂</span>
+        <span class="nav-label">Home</span>
+      </a>
+      <a href="#about" class="nav-link" data-page="about">
+        <span class="nav-icon">人</span>
+        <span class="nav-label">About</span>
+      </a>
+      <a href="#project" class="nav-link" data-page="project">
+        <span class="nav-icon">◈</span>
+        <span class="nav-label">Project</span>
+      </a>
+      <a href="#certification" class="nav-link" data-page="certification">
+        <span class="nav-icon">✦</span>
+        <span class="nav-label">Certification</span>
+      </a>
+      <a href="#contact" class="nav-link" data-page="contact">
+        <span class="nav-icon">✉</span>
+        <span class="nav-label">Contact</span>
+      </a>
+    </div>
+
+    <div class="sidebar-bottom">
+      <button id="themeToggle" class="theme-btn" title="Toggle theme">
+        <span id="themeIcon">☽</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ░░ MOBILE HAMBURGER ░░ -->
+  <button id="hamburger" class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- ░░ MOBILE NAV OVERLAY ░░ -->
+  <div id="mobileOverlay" class="mobile-overlay">
+    <div class="mobile-nav">
+      <button id="closeMenu" class="close-btn">✕</button>
+      <div class="mobile-kanji">藤</div>
+      <a href="#home" class="mobile-link" data-page="home">Home</a>
+      <a href="#about" class="mobile-link" data-page="about">About</a>
+      <a href="#project" class="mobile-link" data-page="project">Project</a>
+      <a href="#certification" class="mobile-link" data-page="certification">Certification</a>
+      <a href="#contact" class="mobile-link" data-page="contact">Contact</a>
+      <button id="mobileTheme" class="mobile-theme-btn">Toggle Theme ☽</button>
+    </div>
+  </div>
+
+  <!-- ░░ MAIN CONTENT ░░ -->
+  <main id="main" class="main-content">
+
+    <!-- ══════════════════════════════════════
+         HOME SECTION
+    ══════════════════════════════════════ -->
+    <section id="home" class="section hero-section">
+      <div class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-grid-lines"></div>
+        <div class="hero-particles" id="particles"></div>
+      </div>
+
+      <div class="hero-content fade-up">
+        <div class="hero-label">
+          <span class="label-line"></span>
+          <span class="label-text">Network Administrator</span>
+          <span class="label-line"></span>
+        </div>
+        <h1 class="hero-name">
+          <span class="name-first">Muhammad</span>
+          <span class="name-last">Fedi Jaelani</span>
+        </h1>
+        <p class="hero-tagline">Jaringan Komputer, Linux, dan Teknologi Informasi</p>
+        <div class="hero-tags">
+          <span class="tag">MikroTik</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Cisco</span>
+          <span class="tag">AWS</span>
+          <span class="tag">VLAN</span>
+          <span class="tag">Nginx</span>
+        </div>
+        <div class="hero-cta">
+          <a href="#project" class="btn-primary">Lihat Proyek</a>
+          <a href="https://drive.google.com/file/d/1l5IrZZzH4fC7sEWJJF4LpfDcWIGiC5o9/view?usp=sharing" target="_blank" class="btn-secondary">Download CV</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll-hint">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="hero-stats fade-up" style="--delay:0.4s">
+        <div class="stat-item">
+          <span class="stat-num">6</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <span class="stat-num">5</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">Years Learning</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         ABOUT SECTION
+    ══════════════════════════════════════ -->
+    <section id="about" class="section about-section">
+      <div class="section-header fade-up">
+        <span class="section-kanji">人</span>
+        <h2 class="section-title">About</h2>
+        <span class="section-subtitle">Tentang Saya</span>
+      </div>
+
+      <div class="about-grid">
+        <!-- Photo -->
+        <div class="about-photo-col fade-up" style="--delay:0.1s">
+          <div class="photo-frame">
+            <div class="photo-corner tl"></div>
+            <div class="photo-corner tr"></div>
+            <div class="photo-corner bl"></div>
+            <div class="photo-corner br"></div>
+            <img src="https://picsum.photos/seed/fedi/400/500" alt="Muhammad Fedi Jaelani" class="about-photo" id="aboutPhoto" />
+            <div class="photo-label">Muhammad Fedi Jaelani</div>
+          </div>
+          <div class="about-socials">
+            <a href="https://github.com/fedijaelani09/portfolio-fedi" target="_blank" class="social-btn" title="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-fedi-jaelani-a60008414/" target="_blank" class="social-btn" title="LinkedIn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/fud0.valid/" target="_blank" class="social-btn" title="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Info -->
+        <div class="about-info-col">
+          <div class="fade-up" style="--delay:0.2s">
+            <p class="about-bio">
+              Saya adalah seorang pelajar Teknik Jaringan Komputer dan Telekomunikasi (TJKT) yang memiliki minat pada jaringan komputer, administrasi sistem Linux, keamanan jaringan, dan cloud computing. Saya telah mempelajari Cisco Networking, MikroTik RouterOS, VLAN, OpenVPN, IPTables, Debian, Ubuntu Server, Apache, Nginx, serta AWS EC2 melalui praktik langsung dan berbagai proyek implementasi infrastruktur jaringan. Saya terus mengembangkan kemampuan untuk membangun sistem yang stabil, aman, dan efisien dalam mendukung kebutuhan teknologi informasi.
+            </p>
+          </div>
+
+          <!-- Details -->
+          <div class="about-details fade-up" style="--delay:0.3s">
+            <div class="detail-row">
+              <span class="detail-key">Nama</span>
+              <span class="detail-sep">—</span>
+              <span class="detail-val">Muhammad Fedi Jaelani</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-key">Pendidikan</span>
+              <span class="detail-sep">—</span>
+              <span class="detail-val">SMK Wikrama Bogor</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-key">Jurusan</span>
+              <span class="detail-sep">—</span>
+              <span class="detail-val">TJKT</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-key">Fokus</span>
+              <span class="detail-sep">—</span>
+              <span class="detail-val">Networking, Linux, Cybersecurity, IT Support</span>
+            </div>
+            <div class="detail-row">
+              <span class="detail-key">Lokasi</span>
+              <span class="detail-sep">—</span>
+              <span class="detail-val">Bogor, Jawa Barat</span>
+            </div>
+          </div>
+
+          <!-- Skills -->
+          <div class="about-skills fade-up" style="--delay:0.4s">
+            <h3 class="skills-title">Keahlian Teknis</h3>
+            <div class="skills-grid">
+              <div class="skill-chip">Cisco Packet Tracer</div>
+              <div class="skill-chip">MikroTik RouterOS</div>
+              <div class="skill-chip">OpenVPN</div>
+              <div class="skill-chip">VLAN</div>
+              <div class="skill-chip">IPTables</div>
+              <div class="skill-chip">Ubuntu Server</div>
+              <div class="skill-chip">Debian</div>
+              <div class="skill-chip">Nginx / Apache</div>
+              <div class="skill-chip">AWS EC2</div>
+              <div class="skill-chip">MariaDB</div>
+              <div class="skill-chip">WordPress</div>
+              <div class="skill-chip">SSH</div>
+              <div class="skill-chip">UFW / Firewall</div>
+              <div class="skill-chip">DNS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Timeline -->
+      <div class="edu-section fade-up" style="--delay:0.5s">
+        <h3 class="sub-section-title">
+          <span class="kanji-small">歴</span> Riwayat Pendidikan
+        </h3>
+        <div class="edu-timeline">
+          <div class="edu-item">
+            <div class="edu-year">2024 – Sekarang</div>
+            <div class="edu-dot"></div>
+            <div class="edu-info">
+              <div class="edu-school">SMK Wikrama Bogor</div>
+              <div class="edu-desc">Teknik Jaringan Komputer dan Telekomunikasi</div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-year">2021 – 2024</div>
+            <div class="edu-dot"></div>
+            <div class="edu-info">
+              <div class="edu-school">SMPI Al-Barokah</div>
+              <div class="edu-desc">Sekolah Menengah Pertama Islam</div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-year">2015 – 2021</div>
+            <div class="edu-dot"></div>
+            <div class="edu-info">
+              <div class="edu-school">SDN Ciburial</div>
+              <div class="edu-desc">Sekolah Dasar Negeri</div>
+            </div>
+          </div>
+          <div class="edu-item">
+            <div class="edu-year">2014 – 2015</div>
+            <div class="edu-dot"></div>
+            <div class="edu-info">
+              <div class="edu-school">PAUD Anyelir</div>
+              <div class="edu-desc">Pendidikan Anak Usia Dini</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learning Journey -->
+      <div class="journey-section fade-up" style="--delay:0.6s">
+        <h3 class="sub-section-title">
+          <span class="kanji-small">道</span> Perjalanan Belajar
+        </h3>
+        <div class="journey-timeline">
+          <div class="journey-item">
+            <div class="journey-year-badge">2024</div>
+            <div class="journey-content">
+              <div class="journey-title">Fondasi Jaringan</div>
+              <p class="journey-desc">Mulai belajar Cisco Networking melalui Packet Tracer, dasar-dasar Linux, dan konfigurasi MikroTik RouterOS.</p>
+              <div class="journey-tags">
+                <span>Cisco</span><span>Linux</span><span>MikroTik</span>
+              </div>
+            </div>
+          </div>
+          <div class="journey-item">
+            <div class="journey-year-badge">2025</div>
+            <div class="journey-content">
+              <div class="journey-title">Pendalaman & Segmentasi</div>
+              <p class="journey-desc">Implementasi VLAN, OpenVPN untuk remote access, konfigurasi IPTables untuk firewall, dan deployment server cloud AWS EC2.</p>
+              <div class="journey-tags">
+                <span>VLAN</span><span>OpenVPN</span><span>IPTables</span><span>Cloud</span>
+              </div>
+            </div>
+          </div>
+          <div class="journey-item">
+            <div class="journey-year-badge">2026</div>
+            <div class="journey-content">
+              <div class="journey-title">Monitoring & Enterprise</div>
+              <p class="journey-desc">Monitoring infrastruktur jaringan secara aktif dan implementasi proyek ASAT dengan topologi jaringan enterprise lengkap.</p>
+              <div class="journey-tags">
+                <span>Monitoring</span><span>Enterprise Network</span><span>ASAT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         PROJECT SECTION
+    ══════════════════════════════════════ -->
+    <section id="project" class="section project-section">
+      <div class="section-header fade-up">
+        <span class="section-kanji">◈</span>
+        <h2 class="section-title">Projects</h2>
+        <span class="section-subtitle">Implementasi & Karya</span>
+      </div>
+
+      <!-- Featured Project -->
+      <div class="featured-project fade-up" style="--delay:0.1s">
+        <div class="featured-badge">✦ Project Unggulan</div>
+        <div class="featured-inner">
+          <div class="featured-img-col">
+            <img src="https://picsum.photos/seed/enterprise-net/600/400" alt="ASAT Project" class="featured-img lightbox-trigger" data-src="https://picsum.photos/seed/enterprise-net/1200/800" />
+          </div>
+          <div class="featured-text-col">
+            <div class="project-year">2026</div>
+            <h3 class="featured-title">ASAT Praktik TJKT 2026</h3>
+            <p class="featured-subtitle">Infrastruktur Jaringan Enterprise — PT TKJ Network Solution</p>
+            <p class="featured-desc">Sebagai Network Administrator simulasi, merancang dan mengimplementasikan infrastruktur jaringan lengkap menggunakan MikroTik, VLAN, Hotspot, Firewall, AWS Cloud, MariaDB, Nginx, dan WordPress.</p>
+            <ul class="featured-achievements">
+              <li>Merancang topologi jaringan perusahaan</li>
+              <li>Mengimplementasikan VLAN 101 dan VLAN 102</li>
+              <li>Membangun sistem hotspot autentikasi</li>
+              <li>Konfigurasi firewall dan NAT</li>
+              <li>Deploy server cloud AWS EC2</li>
+              <li>Konfigurasi MariaDB &amp; Instalasi WordPress</li>
+              <li>Hardening server menggunakan UFW</li>
+            </ul>
+            <div class="project-tech-tags">
+              <span>MikroTik</span><span>AWS EC2</span><span>Debian</span><span>Ubuntu</span>
+              <span>Nginx</span><span>MariaDB</span><span>WordPress</span><span>UFW</span><span>VLAN</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Grid -->
+      <div class="projects-grid">
+
+        <div class="project-card fade-up" style="--delay:0.15s">
+          <div class="project-card-img">
+            <img src="https://picsum.photos/seed/vlan-seg/400/250" alt="VLAN" class="lightbox-trigger" data-src="https://picsum.photos/seed/vlan-seg/800/500" />
+            <div class="project-card-overlay">
+              <span class="view-text">Lihat Detail</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-year">2025</div>
+            <h3 class="project-card-title">Implementasi VLAN & Segmentasi Jaringan</h3>
+            <p class="project-card-desc">Membangun segmentasi jaringan untuk divisi HRD, Marketing, Hotspot, dan NOC menggunakan VLAN pada MikroTik RouterOS dan RB260GS.</p>
+            <div class="project-features">
+              <span>VLAN 101 (HRD)</span>
+              <span>VLAN 102 (Marketing)</span>
+              <span>Inter-VLAN Routing</span>
+              <span>DHCP Server</span>
+              <span>Network Isolation</span>
+            </div>
+            <div class="project-tech-tags small">
+              <span>MikroTik</span><span>RouterOS</span><span>VLAN</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" style="--delay:0.2s">
+          <div class="project-card-img">
+            <img src="https://picsum.photos/seed/aws-deploy/400/250" alt="AWS" class="lightbox-trigger" data-src="https://picsum.photos/seed/aws-deploy/800/500" />
+            <div class="project-card-overlay">
+              <span class="view-text">Lihat Detail</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-year">2025</div>
+            <h3 class="project-card-title">Deploy Website di AWS Cloud</h3>
+            <p class="project-card-desc">Melakukan deployment website pada AWS EC2 dengan Elastic IP, Security Group, DNS lokal, dan web server Nginx.</p>
+            <div class="project-features">
+              <span>Cloud Hosting</span>
+              <span>Elastic IP</span>
+              <span>Security Group</span>
+              <span>SSH Management</span>
+              <span>Public Website Access</span>
+            </div>
+            <div class="project-tech-tags small">
+              <span>AWS EC2</span><span>Nginx</span><span>Linux</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" style="--delay:0.25s">
+          <div class="project-card-img">
+            <img src="https://picsum.photos/seed/hotspot-mik/400/250" alt="Hotspot MikroTik" class="lightbox-trigger" data-src="https://picsum.photos/seed/hotspot-mik/800/500" />
+            <div class="project-card-overlay">
+              <span class="view-text">Lihat Detail</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-year">2025</div>
+            <h3 class="project-card-title">Implementasi Hotspot MikroTik</h3>
+            <p class="project-card-desc">Membangun sistem hotspot dengan halaman login custom dan manajemen user profile untuk akses WiFi terkontrol.</p>
+            <div class="project-features">
+              <span>Captive Portal</span>
+              <span>User Authentication</span>
+              <span>User Profile Management</span>
+              <span>WiFi Access Control</span>
+            </div>
+            <div class="project-tech-tags small">
+              <span>MikroTik</span><span>Hotspot</span><span>RouterOS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" style="--delay:0.3s">
+          <div class="project-card-img">
+            <img src="https://picsum.photos/seed/linux-srv/400/250" alt="Linux Server" class="lightbox-trigger" data-src="https://picsum.photos/seed/linux-srv/800/500" />
+            <div class="project-card-overlay">
+              <span class="view-text">Lihat Detail</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-year">2024 – 2025</div>
+            <h3 class="project-card-title">Linux Server Administration</h3>
+            <p class="project-card-desc">Mengelola server Linux berbasis Debian dan Ubuntu untuk kebutuhan web hosting, database, dan layanan jaringan.</p>
+            <div class="project-features">
+              <span>Nginx</span>
+              <span>Apache</span>
+              <span>MariaDB</span>
+              <span>DNS</span>
+              <span>SSH</span>
+              <span>Firewall</span>
+            </div>
+            <div class="project-tech-tags small">
+              <span>Debian</span><span>Ubuntu</span><span>Nginx</span><span>MariaDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-up" style="--delay:0.35s">
+          <div class="project-card-img">
+            <img src="https://picsum.photos/seed/monitoring-net/400/250" alt="Monitoring" class="lightbox-trigger" data-src="https://picsum.photos/seed/monitoring-net/800/500" />
+            <div class="project-card-overlay">
+              <span class="view-text">Lihat Detail</span>
+            </div>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-year">2026</div>
+            <h3 class="project-card-title">Monitoring Infrastruktur Jaringan</h3>
+            <p class="project-card-desc">Pemantauan server dan jaringan secara berkala menggunakan dashboard monitoring untuk memastikan layanan berjalan normal dan mendeteksi gangguan sejak dini.</p>
+            <div class="project-features">
+              <span>Active Alerts</span>
+              <span>Server Health</span>
+              <span>Network Traffic</span>
+              <span>Web Services</span>
+              <span>Top Talkers</span>
+              <span>Log Analysis</span>
+            </div>
+            <div class="project-tech-tags small">
+              <span>Network Monitoring</span><span>Incident Detection</span><span>Troubleshooting</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CERTIFICATION SECTION
+    ══════════════════════════════════════ -->
+    <section id="certification" class="section cert-section">
+      <div class="section-header fade-up">
+        <span class="section-kanji">✦</span>
+        <h2 class="section-title">Certifications</h2>
+        <span class="section-subtitle">Sertifikat & Pencapaian</span>
+      </div>
+
+      <p class="cert-note fade-up" style="--delay:0.1s">
+        Gambar sertifikat dapat ditambahkan secara mandiri ke masing-masing kartu.
+      </p>
+
+      <div class="cert-grid">
+
+        <div class="cert-card fade-up" style="--delay:0.15s">
+          <div class="cert-img-wrap">
+            <div class="cert-img-placeholder">
+              <span class="cert-img-icon">🛡️</span>
+              <span class="cert-img-text">Certificate Image</span>
+            </div>
+            <div class="cert-year-badge">2026</div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <h3 class="cert-title">Cybersecurity Essentials</h3>
+            <div class="cert-date">23 Januari 2026</div>
+            <div class="cert-tags"><span>Cybersecurity</span><span>Cisco</span></div>
+          </div>
+        </div>
+
+        <div class="cert-card fade-up" style="--delay:0.2s">
+          <div class="cert-img-wrap">
+            <div class="cert-img-placeholder">
+              <span class="cert-img-icon">🔐</span>
+              <span class="cert-img-text">Certificate Image</span>
+            </div>
+            <div class="cert-year-badge">2025</div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">Cisco Networking Academy</div>
+            <h3 class="cert-title">Introduction to Cybersecurity</h3>
+            <div class="cert-date">14 November 2025</div>
+            <div class="cert-tags"><span>Cybersecurity</span><span>Cisco</span></div>
+          </div>
+        </div>
+
+        <div class="cert-card fade-up" style="--delay:0.25s">
+          <div class="cert-img-wrap">
+            <div class="cert-img-placeholder">
+              <span class="cert-img-icon">🌐</span>
+              <span class="cert-img-text">Certificate Image</span>
+            </div>
+            <div class="cert-year-badge">2025</div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">Aguna Course</div>
+            <h3 class="cert-title">Network Fundamental</h3>
+            <div class="cert-date">10 April 2025</div>
+            <div class="cert-tags"><span>Networking</span><span>Fundamental</span></div>
+          </div>
+        </div>
+
+        <div class="cert-card fade-up" style="--delay:0.3s">
+          <div class="cert-img-wrap">
+            <div class="cert-img-placeholder">
+              <span class="cert-img-icon">🐧</span>
+              <span class="cert-img-text">Certificate Image</span>
+            </div>
+            <div class="cert-year-badge">2025</div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">Aguna Course</div>
+            <h3 class="cert-title">Linux Fundamental</h3>
+            <div class="cert-date">10 April 2025</div>
+            <div class="cert-tags"><span>Linux</span><span>Fundamental</span></div>
+          </div>
+        </div>
+
+        <div class="cert-card fade-up" style="--delay:0.35s">
+          <div class="cert-img-wrap">
+            <div class="cert-img-placeholder">
+              <span class="cert-img-icon">💻</span>
+              <span class="cert-img-text">Certificate Image</span>
+            </div>
+            <div class="cert-year-badge">2024</div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-issuer">Aguna Course</div>
+            <h3 class="cert-title">Virtual Machine Fundamental</h3>
+            <div class="cert-date">22 September 2024</div>
+            <div class="cert-tags"><span>Virtual Machine</span><span>Fundamental</span></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         CONTACT SECTION
+    ══════════════════════════════════════ -->
+    <section id="contact" class="section contact-section">
+      <div class="section-header fade-up">
+        <span class="section-kanji">✉</span>
+        <h2 class="section-title">Contact</h2>
+        <span class="section-subtitle">Mari Terhubung</span>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info Col -->
+        <div class="contact-info fade-up" style="--delay:0.1s">
+          <p class="contact-intro">Terbuka untuk peluang kolaborasi, diskusi teknis, atau sekadar bertukar pengetahuan seputar jaringan dan teknologi informasi.</p>
+
+          <div class="contact-items">
+            <a href="mailto:fedi.jaelani09@gmail.com" class="contact-item">
+              <div class="contact-item-icon">✉</div>
+              <div class="contact-item-text">
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-value">fedi.jaelani09@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:+6281914769666" class="contact-item">
+              <div class="contact-item-icon">☎</div>
+              <div class="contact-item-text">
+                <div class="contact-item-label">Phone / WhatsApp</div>
+                <div class="contact-item-value">+62 819-1476-9666</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/muhammad-fedi-jaelani-a60008414/" target="_blank" class="contact-item">
+              <div class="contact-item-icon">in</div>
+              <div class="contact-item-text">
+                <div class="contact-item-label">LinkedIn</div>
+                <div class="contact-item-value">muhammad-fedi-jaelani</div>
+              </div>
+            </a>
+            <a href="https://github.com/fedijaelani09/portfolio-fedi" target="_blank" class="contact-item">
+              <div class="contact-item-icon">⌘</div>
+              <div class="contact-item-text">
+                <div class="contact-item-label">GitHub</div>
+                <div class="contact-item-value">fedijaelani09</div>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/fud0.valid/" target="_blank" class="contact-item">
+              <div class="contact-item-icon">◎</div>
+              <div class="contact-item-text">
+                <div class="contact-item-label">Instagram</div>
+                <div class="contact-item-value">@fud0.valid</div>
+              </div>
+            </a>
+          </div>
+
+          <a href="https://drive.google.com/file/d/1l5IrZZzH4fC7sEWJJF4LpfDcWIGiC5o9/view?usp=sharing" target="_blank" class="cv-btn">
+            <span>⬇</span> Download CV
+          </a>
+        </div>
+
+        <!-- Form Col -->
+        <div class="contact-form-col fade-up" style="--delay:0.2s">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-group">
+              <label class="form-label" for="fname">Nama</label>
+              <input type="text" id="fname" name="fname" class="form-input" placeholder="Nama lengkap kamu" />
+              <span class="form-error" id="fnameError">Nama wajib diisi</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="femail">Email</label>
+              <input type="email" id="femail" name="femail" class="form-input" placeholder="email@example.com" />
+              <span class="form-error" id="femailError">Email tidak valid</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="fsubject">Subjek</label>
+              <input type="text" id="fsubject" name="fsubject" class="form-input" placeholder="Perihal pesan" />
+              <span class="form-error" id="fsubjectError">Subjek wajib diisi</span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="fmessage">Pesan</label>
+              <textarea id="fmessage" name="fmessage" class="form-input form-textarea" placeholder="Tulis pesanmu di sini..."></textarea>
+              <span class="form-error" id="fmessageError">Pesan wajib diisi</span>
+            </div>
+            <button type="submit" class="form-submit" id="formSubmit">
+              <span id="submitText">Kirim Pesan</span>
+              <span id="submitLoader" class="hidden">⟳ Mengirim...</span>
+            </button>
+            <div id="formSuccess" class="form-success hidden">✓ Pesan berhasil dikirim. Terima kasih!</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════
+         FOOTER
+    ══════════════════════════════════════ -->
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-kanji">藤</span>
+          <div>
+            <div class="footer-name">Muhammad Fedi Jaelani</div>
+            <div class="footer-tagline">Jaringan Komputer, Linux & Teknologi Informasi</div>
+          </div>
+        </div>
+
+        <div class="footer-cols">
+          <div class="footer-col">
+            <div class="footer-col-title">Navigasi</div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#project">Projects</a>
+            <a href="#certification">Certifications</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Kontak</div>
+            <a href="mailto:fedi.jaelani09@gmail.com">fedi.jaelani09@gmail.com</a>
+            <a href="tel:+6281914769666">+62 819-1476-9666</a>
+            <span>Bogor, Jawa Barat</span>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Media Sosial</div>
+            <a href="https://github.com/fedijaelani09/portfolio-fedi" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/muhammad-fedi-jaelani-a60008414/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/fud0.valid/" target="_blank">Instagram</a>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Dokumen</div>
+            <a href="https://drive.google.com/file/d/1l5IrZZzH4fC7sEWJJF4LpfDcWIGiC5o9/view?usp=sharing" target="_blank">Download CV</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Muhammad Fedi Jaelani</span>
+        <span class="footer-sep">·</span>
+        <span>Bogor, Jawa Barat</span>
+        <span class="footer-sep">·</span>
+        <span>SMK Wikrama Bogor — TJKT</span>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ░░ BACK TO TOP ░░ -->
+  <button id="backToTop" class="back-to-top" title="Back to top">↑</button>
+
+  <!-- ░░ LIGHTBOX ░░ -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <img id="lightboxImg" src="" alt="Lightbox" class="lightbox-img" />
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
